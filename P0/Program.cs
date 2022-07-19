@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ROCKPAPERSCISSORS
 {
@@ -21,6 +17,7 @@ namespace ROCKPAPERSCISSORS
                 int scorePlayer = 0;
                 int scoreCPU = 0;
 
+
                 while (scorePlayer < 3 && scoreCPU < 3)
                 {
                     
@@ -37,56 +34,77 @@ namespace ROCKPAPERSCISSORS
                     {
                         case 1:
                             inputCPU = "ROCK";
-                            Console.WriteLine("Computer chose ROCK");
+                            
                             if (inputPlayer == "ROCK")
                             {
+                                Console.WriteLine("Computer chose ROCK");
                                 Console.WriteLine("DRAW!!\n\n");
                             }
                             else if (inputPlayer == "PAPER")
                             {
+                                Console.WriteLine("Computer chose ROCK");
                                 Console.WriteLine("PLAYER WINS!!\n\n");
                                 scorePlayer++;
                             }
                             else if (inputPlayer == "SCISSORS")
                             {
+                                Console.WriteLine("Computer chose ROCK");
                                 Console.WriteLine("CPU WINS!!\n\n");
                                 scoreCPU++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Invalid entry!\n\n");
                             }
                             break;
                         case 2:
                             inputCPU = "PAPER";
-                            Console.WriteLine("Computer chose PAPER");
+                            
                             if (inputPlayer == "PAPER")
                             {
+                                Console.WriteLine("Computer chose PAPER");
                                 Console.WriteLine("DRAW!!\n\n");
                             }
                             else if (inputPlayer == "ROCK")
                             {
+                                Console.WriteLine("Computer chose PAPER");
                                 Console.WriteLine("CPU WINS!!\n\n");
                                 scoreCPU++;
                             }
                             else if (inputPlayer == "SCISSORS")
                             {
+                                Console.WriteLine("Computer chose PAPER");
                                 Console.WriteLine("PLAYER WINS!!\n\n");
                                 scorePlayer++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Invalid entry!\n\n");
                             }
                             break;
                         case 3:
                             inputCPU = "SCISSORS";
-                            Console.WriteLine("Computer chose SCISSORS");
+                            
                             if (inputPlayer == "SCISSORS")
                             {
+                                Console.WriteLine("Computer chose SCISSORS");
                                 Console.WriteLine("DRAW!!\n\n");
                             }
                             else if (inputPlayer == "ROCK")
                             {
+                                Console.WriteLine("Computer chose SCISSORS");
                                 Console.WriteLine("PLAYER WINS!!\n\n");
                                 scorePlayer++;
                             }
                             else if (inputPlayer == "PAPER")
                             {
+                                Console.WriteLine("Computer chose SCISSORS");
                                 Console.WriteLine("CPU WINS!!\n\n");
                                 scoreCPU++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Invalid entry!\n\n");
                             }
                             break;
                         default:
