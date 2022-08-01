@@ -39,7 +39,7 @@ namespace GameAPI.Data
                 int games = reader.GetInt32(2);
                 //string? batch = reader.IsDBNull(2) ? "" : reader.GetString(2);
 
-                score tmpScore = new score(name, wins, games);
+                score tmpScore = new score(name, wins, games); //?
                 
                 result.Add(tmpScore);
             }
