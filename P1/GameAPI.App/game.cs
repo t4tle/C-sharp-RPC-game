@@ -123,12 +123,12 @@ namespace GameAPI.App
                 if (scorePlayer == 3)
                 {
                     Console.WriteLine("Player WON!");
-                    return pwin = true;
+                    //return pwin = true;
                 }
                 else if (scoreCPU == 3)
                 {
                     Console.WriteLine("CPU WON!");
-                    return pwin = false;
+                    //return pwin = false;
                 }
                 else
                 {
