@@ -24,7 +24,7 @@ namespace GameAPI.App
         // Methods
         public override string ToString()
         {
-            return $"{name} {wins} {games}";
+            return $"Name:{name} Wins:{wins} Games:{games}";
         }
 
     }

@@ -1,14 +1,18 @@
 using System;
 
-namespace game
+namespace GameAPI.App
 {
     public class game
     {
-        public static void startgame()
+        public static async Task startgame()
         {
             string inputPlayer, inputCPU;
             int randomInt;
+
+            helper h = new helper();
             
+            await h.score();
+
             bool playAgain = true;
 
             while (playAgain)
@@ -16,7 +20,7 @@ namespace game
 
                 int scorePlayer = 0;
                 int scoreCPU = 0;
-
+                bool pwin ;
 
                 while (scorePlayer < 3 && scoreCPU < 3)
                 {
@@ -119,10 +123,12 @@ namespace game
                 if (scorePlayer == 3)
                 {
                     Console.WriteLine("Player WON!");
+                    return pwin = true;
                 }
                 else if (scoreCPU == 3)
                 {
                     Console.WriteLine("CPU WON!");
+                    return pwin = false;
                 }
                 else
                 {

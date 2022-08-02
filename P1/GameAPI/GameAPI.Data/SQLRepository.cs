@@ -25,7 +25,7 @@ namespace GameAPI.Data
             using SqlConnection connection = new(_connectionString);
             await connection.OpenAsync();
 
-            string cmdText = "SELECT name, wins, rounds FROM scoreboard;";
+            string cmdText = "SELECT name, wins, rounds FROM scoreboard ORDER BY wins Desc;";
 
             using SqlCommand cmd = new(cmdText, connection);
 
